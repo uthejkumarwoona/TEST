@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter string to reverse:");
+		Scanner scn = new Scanner(System.in);
+		String word = scn.nextLine();
+		String reverseword = "";
+		
+		for (int i= word.length()-1;i>=0;i--)
+		{
+			reverseword = reverseword + word.charAt(i);
+			
+		}
+		scn.close();
+		
+		System.out.println("Reversed string is:");
+		System.out.println(reverseword);
+		
+	}
+
+}
